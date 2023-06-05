@@ -14,7 +14,7 @@ projects = pd.read_csv('/code/datasets/pr.csv')
 projects["skill"] = projects["skill"].apply(eval)
 to_1D(projects["skill"])
 
-favorites_df=pd.read_csv("/code//datasets/favorite2.csv")
+favorites_df=pd.read_csv("/code/datasets/favorite2.csv")
 favorites_df.drop(['Unnamed: 0','favorite_object_type'],axis=1, inplace=True)
 favorites_df['is_favorite']=1
 
